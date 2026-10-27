@@ -1,0 +1,16 @@
+{
+  "name": "saucedemo-selenium-js",
+  "version": "1.0.0",
+  "description": "SauceDemo UI automation using Selenium WebDriver, Mocha, POM, and visual regression",
+  "private": true,
+  "scripts": {
+    "test": "mocha --timeout 30000 --reporter spec",
+    "test:update-snapshots": "cross-env UPDATE_SNAPSHOTS=1 mocha test/**/*.test.js"
+  },
+  "devDependencies": {
+    "mocha": "^11.0.0",
+    "pixelmatch": "^6.0.0",
+    "pngjs": "^7.0.0",
+    "selenium-webdriver": "^4.20.0"
+  }
+}
